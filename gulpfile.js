@@ -5,10 +5,14 @@ gulp.task('html', function() {
     .pipe(gulp.dest('bin'));
 });
 
+gulp.task('netlify', function() {
+    return gulp.src('./src/_headers').pipe(gulp.dest('bin'));
+});
+
 gulp.task('site-dev', [
     'html'
 ]);
 
 gulp.task('default', [
-    'site-dev'
+    'site-dev', 'netlify'
 ]);
