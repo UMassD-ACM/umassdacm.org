@@ -36,3 +36,6 @@ header nav a:hover {
 main {
     margin: 1em;
 }
+main h1 {
+    margin-bottom: 0;
+}
