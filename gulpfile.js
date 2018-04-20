@@ -1,7 +1,9 @@
 const gulp = require('gulp');
+const gih = require('gulp-include-html');
 
 gulp.task('html', function() {
     return gulp.src('./src/**/*.html')
+    .pipe(gih())
     .pipe(gulp.dest('bin'));
 });
 
