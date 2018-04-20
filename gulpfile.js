@@ -7,12 +7,17 @@ gulp.task('html', function() {
     .pipe(gulp.dest('bin'));
 });
 
+gulp.task('static', function() {
+    return gulp.src('./src/**/*.css')
+    .pipe(gulp.dest('bin'));
+});
+
 gulp.task('netlify', function() {
     return gulp.src('./src/_headers').pipe(gulp.dest('bin'));
 });
 
 gulp.task('site-dev', [
-    'html'
+    'html', 'static'
 ]);
 
 gulp.task('default', [

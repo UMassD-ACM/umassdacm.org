@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    min-height: 4em;
+    background-color: #003764;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header img {
+    display: inline-block;
+    max-height: 2.5em;
+    margin: .5em 0;
+}
+header img:first-child {
+    padding-left: .5em;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+}
+header nav a {
+    display: inline-block;
+    padding: 1.5em .75em;
+    color: white;
+}
+header nav a:first-child {
+    margin-left: 1em;
+}
+header nav a:hover {
+    background-color: #666;
+}
+main {
+    margin: 1em;
+}
